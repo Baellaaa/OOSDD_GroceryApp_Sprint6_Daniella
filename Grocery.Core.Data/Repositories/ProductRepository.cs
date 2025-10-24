@@ -1,9 +1,10 @@
 ﻿using Grocery.Core.Interfaces.Repositories;
 using Grocery.Core.Models;
+using Microsoft.Data.Sqlite;
 
 namespace Grocery.Core.Data.Repositories
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : DatabaseConnection, IProductRepository
     {
         private readonly List<Product> products;
         public ProductRepository()

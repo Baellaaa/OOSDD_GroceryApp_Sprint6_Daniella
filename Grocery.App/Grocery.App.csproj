@@ -97,6 +97,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\NewProductView.xaml.cs">
+	    <DependentUpon>NewProductView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\BestSellingProductsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -118,6 +124,9 @@
 	  <MauiXaml Update="Views\LoginView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\NewProductView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ProductCategoriesView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -127,9 +136,42 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Platforms\Windows\Package.appxmanifest">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
+		<Compile Update="Views\BestSellingProductsView.xaml.cs">
+			<DependentUpon>BestSellingProductsView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\BoughtProductsView.xaml.cs">
+			<DependentUpon>BoughtProductsView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\CategoriesView.xaml.cs">
+			<DependentUpon>CategoriesView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\ChangeColorView.xaml.cs">
+			<DependentUpon>ChangeColorView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\GroceryListItemsView.xaml.cs">
+			<DependentUpon>GroceryListItemsView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\GroceryListsView.xaml.cs">
+			<DependentUpon>GroceryListsView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\LoginView.xaml.cs">
+			<DependentUpon>LoginView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\NewProductView.xaml.cs">
+			<DependentUpon>NewProductView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\ProductCategoriesView.xaml.cs">
+			<DependentUpon>ProductCategoriesView.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\ProductView.xaml.cs">
+			<DependentUpon>ProductView.xaml</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Platforms\Windows\Package.appxmanifest">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 </Project>
